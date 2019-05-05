@@ -1,0 +1,87 @@
+  348  docker run postgres
+  349  docker run ubuntu
+  350  docker -ti run ubuntu bash
+  351  docker run -ti ubuntu bash
+  352  docker ps
+  353  docker version
+  354  docker info
+  355  docker
+  356  docker ps -a
+  357  docker ps
+  358  docker run hello-world
+  359  docker ps -a
+  360  docker rm eeb7166082d4 f7001ff08187 010eb31a395c bc0754ba39a8 5a2a3b091442 8cc4dfe9cf9c
+  361  docker ps -a
+  362  docker rm 1f1e3d136aee a3a5b40be65f 6258f56f0450 f84fe3c8c157 4f554494af53 1032c1901e39 1b2445c703c8
+  363  docker ps -a
+  364  docker run --rm hello-world
+  365  docker ps -a
+  366  docker images
+  367  docker run hello-world
+  368  docker rmi hello-world
+  369  docker ps -a
+  370  docker rm d37c1e4eb638
+  371  docker ps -a
+  372  docker rmi hello-world
+  373  docker run hello-world
+  374  docker run -p80:80 nginx
+  375  docker run -p80:81 nginx
+  376  docker run -p81:80 nginx
+  377  docker ps
+  378  docker run -it ubuntu bash
+  379  docker exec --help
+  380  docker exec -ti 1032c1901e39 bash
+  381  docker ps
+  382  docker kill ad 1f 62 4f
+  383  docker ps
+  384  docker system prune
+  385  docker ps
+  386  ls -ltra
+  387  vim Dockerfile
+  388  docker build -t print_time .
+  389  docker run print_time
+  390  vim Dockerfile
+  391  python3 --help
+  392  q!
+  393  vim stock_price.py
+  394  python3 stock_price.py
+  395  vim stocks_data
+  396  vim stock_price_ext_data.py
+  397  cat stock_price.py
+  398  ls -ltra
+  399  cat stock_price.py
+  400  vim stock_price_external_data.py
+  401  ls -ltr
+  402  mv stocks_data stock.data
+  403  vim stock_price_external_data.py
+  404  cp Dockerfile Dockerfile_ext
+  405  vim Dockerfile_ext
+  406  docker build -t stock_external_data .
+  407  docker run stock_external_data
+  408  vim Dockerfile_ext
+  409  ls -ltra
+  410  cat stock_price_external_data.py
+  411  ls -ltra
+  412  python3 stock_price_external_data.py
+  413  docker build -f Dockerfile_ext -t stock_external_data
+  414  docker build -f Dockerfile_ext -t stock_external_data .
+  415  docker run stock_external_data:latest
+  416  docker run -v stock.data:/data stock_external_data:latest
+  417  docker run -v stock.data:/data stock_external_data:latest bash
+  418  docker run -v -ti stock.data:/data stock_external_data:latest bash
+  419  docker run -ti -v stock.data:/data stock_external_data:latest bash
+  420  docker run -v -ti .:/data stock_external_data:latest bash
+  421  pwd
+  422  mkdir data
+  423  mv stock.data
+  424  mv stock.data  data/
+  425  docker run -v -ti data:/data stock_external_data:latest bash
+  426  docker run -ti -v data:/data stock_external_data:latest bash
+  427  ls -ltra
+  428  ls data/
+  429  docker run -v ./data:/data stock_external_data:latest bash
+  430  pwd
+  431  docker run -v /Users/elomonac/dev/class4-notebook/data:/data stock_external_data:latest bash
+  432  docker run -v /Users/elomonac/dev/class4-notebook/data:/data stock_external_data:latest
+  433  ls -ltra
+  434  history

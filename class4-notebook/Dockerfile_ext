@@ -1,0 +1,8 @@
+FROM ubuntu:latest
+
+RUN apt-get update
+RUN apt-get -y install python3
+
+COPY stock_price_external_data.py .
+
+CMD ["python3","-u","stock_price_external_data.py"]
