@@ -7,3 +7,5 @@ import time
 import random
 
 print(random.randint(0, 50))
+
+dir(time)
