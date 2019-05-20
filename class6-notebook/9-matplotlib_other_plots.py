@@ -31,14 +31,14 @@ axes.set_title('Mean Simmetry')
 axes.set_xlabel('Buckets')
 axes.set_ylabel('Mean Simmetry')
 axes.legend()
-plt.savefig('plots/9-matplotlib_other_plots/mean_simmetry_hist.png', dpi=300)
+plt.savefig('plots/9-matplotlib_other_plots/cancer_mean_simmetry_hist.png', dpi=300)
 
 # Pie
 fig, axes = plt.subplots(1, 1, figsize=(5, 5))
 axes.pie(df['diagnosis'].value_counts(), labels=df['diagnosis'].value_counts().index.tolist())
 axes.set_title('Diagnosis')
 axes.legend()
-plt.savefig('plots/9-matplotlib_other_plots/diagnosis_pie.png', dpi=300)
+plt.savefig('plots/9-matplotlib_other_plots/cancer_diagnosis_pie.png', dpi=300)
 
 # Bar
 fig, axes = plt.subplots(1, 1, figsize=(5, 5))
@@ -47,7 +47,7 @@ axes.set_title('Mean Simmetry')
 axes.set_xlabel('Index')
 axes.set_ylabel('Mean Simmetry')
 axes.legend()
-plt.savefig('plots/9-matplotlib_other_plots/mean_simmetry_bar.png', dpi=300)
+plt.savefig('plots/9-matplotlib_other_plots/cancer_mean_simmetry_bar.png', dpi=300)
 
 # Correlation Heatmap
 fig, axes = plt.subplots(1, 1, figsize=(20, 20))
@@ -68,7 +68,7 @@ for i in range(numrows):
         text = axes.text(j, i, correlation.iloc[i, j], ha='center', va='center', color='w')
 axes.set_title('Heatmap of Correlation of Dimensions')
 fig.tight_layout()
-plt.savefig('plots/9-matplotlib_other_plots/correlation_heatmap.png')
+plt.savefig('plots/9-matplotlib_other_plots/cancer_correlation_heatmap.png')
 
 # 3D
 malign = df[df['diagnosis'] == 'M']
@@ -81,6 +81,6 @@ axes.legend((line1, line2), ('Malign', 'Benign'))
 axes.set_xlabel('mean smoothness')
 axes.set_ylabel('mean symmetry')
 axes.set_zlabel('mean concavity')
-plt.savefig('plots/9-matplotlib_other_plots/diagnosis_scatter_3d.png')
+plt.savefig('plots/9-matplotlib_other_plots/cancer_diagnosis_scatter_3d.png')
 
 plt.close()

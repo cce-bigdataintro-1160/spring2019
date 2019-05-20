@@ -15,14 +15,6 @@ sns.set()
 
 plt.figure()
 sns.distplot(df['BMI'], bins=15, kde=False)
-plt.savefig('plots/11-seaborn_distplot/bmi_distplot.png')
-
-plt.figure()
-sns.distplot(df['S3'], bins=50, kde=False)
-plt.savefig('plots/11-seaborn_distplot/s3_distplot.png')
-
-plt.figure()
-sns.distplot(df['AGE'], bins=30, kde=False)
-plt.savefig('plots/11-seaborn_distplot/age_distplot.png')
+plt.savefig('plots/11-seaborn_distplot/diabetes_bmi_distplot.png')
 
 plt.close()

@@ -30,6 +30,6 @@ axes[1].legend()
 
 os.makedirs('plots/6-matplotlib_with_datasets', exist_ok=True)
 
-plt.savefig('plots/6-matplotlib_with_datasets/boston_crime.png', dpi=300)
+plt.savefig('plots/6-matplotlib_with_datasets/boston_crime_scatter.png', dpi=300)
 
 plt.close()
