@@ -22,6 +22,7 @@ for col1_idx, column1 in enumerate(df.columns):
     axes.set_ylabel('Distribution')
     axes.legend()
     plt.savefig(f'plots/{column1}_hist.png', dpi=300)
+    plt.close(fig)
 
     for col2_idx, column2 in enumerate(df.columns):
         if col1_idx < col2_idx:
@@ -32,5 +33,6 @@ for col1_idx, column1 in enumerate(df.columns):
             axes.set_ylabel(column2)
             axes.legend()
             plt.savefig(f'plots/{column1}_{column2}.png', dpi=300)
+            plt.close(fig)
 
 plt.close()
