@@ -17,15 +17,12 @@ sns.set()
 
 sorted_by_sepal_length_df = df.sort_values('sepal length (cm)')
 
-plt.figure()
 sns.lineplot('sepal length (cm)', 'petal length (cm)', data=sorted_by_sepal_length_df)
 sns.lineplot('sepal length (cm)', 'petal width (cm)', data=sorted_by_sepal_length_df)
 plt.legend(['sepal length (cm) vs petal length (cm)', 'petal length (cm) vs petal width (cm)'])
 plt.savefig('plots/10-seaborn_plots/iris_sepal length_petal length_lineplot.png')
 
-plt.figure()
 sns.scatterplot('sepal length (cm)', 'petal length (cm)', data=df)
 plt.legend(['sepal length (cm)'])
 plt.savefig('plots/10-seaborn_plots/iris_sepal length_petal length_scatterplot.png')
 
-plt.close()

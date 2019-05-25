@@ -13,7 +13,6 @@ os.makedirs('plots/11-seaborn_distplot', exist_ok=True)
 
 sns.set()
 
-plt.figure()
 sns.distplot(df['BMI'], bins=15, kde=False)
 plt.savefig('plots/11-seaborn_distplot/diabetes_bmi_distplot.png')
 
