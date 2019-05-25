@@ -9,6 +9,9 @@ square = linear ** 2
 log = np.log(linear)
 random = np.random.randint(0, 100, 20)
 
+#Solarize_light2, bmh,grayscale, dark_background, ggplot
+plt.style.use("ggplot")
+
 fig, axes = plt.subplots(1, 1, figsize=(5, 5))
 
 axes.plot(linear, label='Linear', color='blue', linestyle='--', linewidth=2, alpha=0.8, marker='o')

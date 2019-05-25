@@ -20,5 +20,6 @@ for col1_idx, column1 in enumerate(df.columns):
             axes.set_ylabel(column2)
             axes.legend()
             plt.savefig(f'plots/7-matplotlib_dataset_exploration/diabetes_{column1}_{column2}_scatter.png', dpi=300)
+            plt.close(fig)
 
 plt.close()
