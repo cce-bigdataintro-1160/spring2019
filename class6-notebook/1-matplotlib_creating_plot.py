@@ -13,6 +13,7 @@ plt.plot(square)
 plt.plot(log)
 plt.plot(random)
 
+# X, y
 # plt.plot(log, square)
 
 plt.title('Linear Plot')

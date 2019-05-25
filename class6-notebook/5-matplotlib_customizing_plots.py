@@ -14,7 +14,7 @@ plt.style.use("ggplot")
 
 fig, axes = plt.subplots(1, 1, figsize=(5, 5))
 
-axes.plot(linear, label='Linear', color='blue', linestyle='--', linewidth=2, alpha=0.8, marker='o')
+axes.plot(log, label='Linear', color='blue', linestyle='--', linewidth=2, alpha=0.8, marker='o')
 axes.set_title('Linear Plot')
 axes.set_xlabel('Index')
 axes.set_ylabel('Linear')
