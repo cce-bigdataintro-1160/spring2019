@@ -16,6 +16,7 @@ diabetes_df = pd.read_csv('data/diabetes.data',
                           header=0)
 sns.pairplot(diabetes_df, hue='SEX', diag_kind='hist')
 plt.savefig('plots/15-seaborn_pairplot/diabetes_pairplot.png')
+plt.clf()
 
 # Boston Pairplot
 boston_df = pd.read_csv('data/boston/housing.data',
@@ -25,6 +26,7 @@ boston_df.columns = ['CRIM', 'ZN', 'INDUS', 'CHAS', 'NOX', 'RM', 'AGE', 'DIS', '
                      'MEDV']
 sns.pairplot(boston_df, hue='CHAS', diag_kind='hist')
 plt.savefig('plots/15-seaborn_pairplot/boston_pairplot.png')
+plt.clf()
 
 # Cancer Pairplot
 cancer_df = pd.read_csv('data/breast-cancer/wdbc.data',
@@ -42,6 +44,7 @@ cancer_df.columns = ['id', 'diagnosis', 'mean radius', 'mean texture', 'mean per
 cancer_df['encoded_diagnosis'] = cancer_df['diagnosis'].map({'B': 0, 'M': 1})
 sns.pairplot(cancer_df, hue='encoded_diagnosis', diag_kind='hist')
 plt.savefig('plots/15-seaborn_pairplot/cancer_pairplot.png')
+plt.clf()
 
 
 #Iris Pairplot
@@ -51,6 +54,7 @@ iris_df = pd.read_csv('data/iris/iris-encoded.data',
 iris_df.columns = ['sepal length (cm)', 'sepal width (cm)', 'petal length (cm)', 'petal width (cm)', 'class']
 sns.pairplot(iris_df, hue='class', diag_kind='hist')
 plt.savefig('plots/15-seaborn_pairplot/iris_pairplot.png')
+plt.clf()
 
 
 # Wine Pairplot

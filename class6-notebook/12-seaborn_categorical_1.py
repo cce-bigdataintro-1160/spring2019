@@ -31,9 +31,11 @@ df['encoded_diagnosis'] = df['diagnosis'].map({'B': 0, 'M': 1})
 
 sns.countplot('encoded_diagnosis', data=df)
 plt.savefig('plots/12-seaborn_categorical_1/cancer_encoded_diagnosis_countplot.png')
+plt.clf()
 
 sns.barplot('encoded_diagnosis', 'mean area', data=df, estimator=np.mean)
 plt.savefig('plots/12-seaborn_categorical_1/cancer_encoded_diagnosis_mean area_countplot.png')
+plt.clf()
 
 sns.boxplot('encoded_diagnosis', 'mean area', data=df, palette='inferno')
 plt.savefig('plots/12-seaborn_categorical_1/cancer_encoded_diagnosis_mean area_boxplot.png')

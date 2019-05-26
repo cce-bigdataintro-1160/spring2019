@@ -18,5 +18,6 @@ sns.set()
 for jointplot_kind in ['reg', 'hex', 'kde', 'scatter']:
     sns.jointplot('sepal length (cm)', 'petal length (cm)', data=df, kind=jointplot_kind)
     plt.savefig(f'plots/14-seaborn_jointplot/iris_sepal length (cm) to petal length (cm)_jointplot_{jointplot_kind}.png')
+    plt.clf()
 
 plt.close()

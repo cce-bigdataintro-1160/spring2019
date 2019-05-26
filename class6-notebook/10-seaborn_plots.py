@@ -21,6 +21,7 @@ sns.lineplot('sepal length (cm)', 'petal length (cm)', data=sorted_by_sepal_leng
 sns.lineplot('sepal length (cm)', 'petal width (cm)', data=sorted_by_sepal_length_df)
 plt.legend(['sepal length (cm) vs petal length (cm)', 'petal length (cm) vs petal width (cm)'])
 plt.savefig('plots/10-seaborn_plots/iris_sepal length_petal length_lineplot.png')
+plt.clf()
 
 sns.scatterplot('sepal length (cm)', 'petal length (cm)', data=df)
 plt.legend(['sepal length (cm)'])
