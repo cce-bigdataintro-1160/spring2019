@@ -23,7 +23,7 @@ for (real, predicted) in list(zip(y_test, predicted_values)):
     print(f'Value: {real}, pred: {predicted} {"is different" if real != predicted else ""}')
 
 # Printing accuracy score(mean accuracy) from 0 - 1
-print(f'Accuracy score is {lr.score(X_test, y_test):.2f}/1')
+print(f'Accuracy score is {lr.score(X_test, y_test):.2f}/1 \n')
 
 # Printing the classification report
 from sklearn.metrics import classification_report, confusion_matrix, f1_score

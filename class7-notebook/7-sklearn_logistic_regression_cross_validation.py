@@ -1,5 +1,4 @@
 from sklearn.datasets import load_iris
-import numpy as np
 
 iris = load_iris()
 columns_names = iris.feature_names

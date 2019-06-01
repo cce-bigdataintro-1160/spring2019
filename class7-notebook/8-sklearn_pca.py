@@ -11,6 +11,6 @@ diabetes = datasets.load_diabetes()
 # Visualizing structure of dataset in 2D
 pca = PCA(n_components=2)
 proj = pca.fit_transform(iris.data)
-plt.scatter(proj[:, 0], proj[:, 1], c=iris.target)
+plt.scatter(proj[:, 0], proj[:, 1], c=iris.target, edgecolors='black')
 plt.colorbar()
 plt.show()

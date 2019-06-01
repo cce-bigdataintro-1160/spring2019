@@ -18,12 +18,12 @@ lr = LogisticRegression()
 lr.fit(X_train, y_train)
 
 # Output of the training is a model: a + b*X0 + c*X1 + d*X2 ...
-print(f"Intercept per class: {lr.intercept_}")
-print(f"Coeficients per class: {lr.coef_}")
+print(f"Intercept per class: {lr.intercept_}\n")
+print(f"Coeficients per class: {lr.coef_}\n")
 
-print(f"Available classes: {lr.classes_}")
-print(f"Named Coeficients for class 1: {pd.DataFrame(lr.coef_[0], columns_names)}")
-print(f"Named Coeficients for class 2: {pd.DataFrame(lr.coef_[1], columns_names)}")
-print(f"Named Coeficients for class 3: {pd.DataFrame(lr.coef_[2], columns_names)}")
+print(f"Available classes: {lr.classes_}\n")
+print(f"Named Coeficients for class 1: {pd.DataFrame(lr.coef_[0], columns_names)}\n")
+print(f"Named Coeficients for class 2: {pd.DataFrame(lr.coef_[1], columns_names)}\n")
+print(f"Named Coeficients for class 3: {pd.DataFrame(lr.coef_[2], columns_names)}\n")
 
 print(f"Number of iterations generating model: {lr.n_iter_}")
