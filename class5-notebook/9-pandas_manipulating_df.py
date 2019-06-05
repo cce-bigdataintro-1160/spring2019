@@ -21,7 +21,7 @@ pretty_print("titanic columns", titanic.columns)
 pretty_print("dropping the row with index 1", titanic.drop(1))
 pretty_print("dropping the entire column Embarked", titanic.drop('Embarked', axis=1)) #inplace=True
 
-# Multiplying DataFrame values
+# Multiplying DataFrame values and adding columns
 titanic['SquaredFare'] = titanic['Fare'] ** 2
 pretty_print("showing we added the SquaredFare column", titanic.to_string())
 
