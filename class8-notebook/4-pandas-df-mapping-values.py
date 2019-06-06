@@ -9,7 +9,7 @@ print(spotify.head(5).to_string())
 spotify['artists'] = spotify['artists'].apply(lambda x: x.upper())
 
 # Adding a new column with the length of the name of each artist
-spotify['name_has_love'] = spotify['artists'].apply(lambda x: len(x))
+# spotify['artists_length'] = spotify['artists'].apply(lambda x: len(x))
 
 # Passing a function that identify songs that contain the word 'love' on the name
 # def has_love(x):
